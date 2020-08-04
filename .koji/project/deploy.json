@@ -1,0 +1,22 @@
+{
+  "deploy": {
+    "subdomain": ".withkoji.com",
+    "frontend": {
+      "output": "frontend/dist",
+      "commands": [
+        "cd frontend",
+        "npm install",
+        "export NODE_ENV=production && npm run build"
+      ],
+      "injections": []
+    },
+    "backend": {
+      "output": "backend/dist",
+      "commands": [
+        "cd backend",
+        "npm install",
+        "export NODE_ENV=production && npm run build"
+      ]
+    }
+  }
+}
